@@ -4,7 +4,7 @@ pipeline {
         registryCredential = 'dockerhub'
         dockerImage = ''
         kubeconfig = "/home/ubuntu/.kube/config"  
-        deploymentName = "swe642-hw2-deployment"  
+        deploymentName = "swe645-hw3-deployment"  
     }
     agent any
     
@@ -18,9 +18,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker buildx create --use'
-                    sh 'docker buildx inspect --bootstrap'
-                    dockerImage = docker.build("${registry}:${BUILD_NUMBER}", "--platform linux/amd64,linux/arm64 .")
+                    dockerImage = docker.build("${registry}:${BUILD_NUMBER} .")
                 }
             }
         }
