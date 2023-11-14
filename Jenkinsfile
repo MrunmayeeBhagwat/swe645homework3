@@ -32,12 +32,6 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-                // You can add any pre-deployment steps here
-            }
-        }
 
         stage('Deploy Image') {
             steps {
