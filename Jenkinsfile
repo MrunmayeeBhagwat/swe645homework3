@@ -4,7 +4,7 @@ pipeline {
         registryCredential = 'dockerhub'
         dockerImage = ''
         kubeconfig = "/home/ubuntu/.kube/config"  
-        deploymentName = "swe645-hw3-deployment"  
+        deploymentName = "deployment"  
     }
     agent any
     
