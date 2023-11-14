@@ -15,13 +15,14 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
+        stage('Build') {
             steps {
+                echo 'Building...'
                 script {
-                    dockerImage = docker.build("${registry}:${BUILD_NUMBER} .")
+                        dockerImage = docker.build("${registry}:${BUILD_NUMBER}")
                 }
-            }
-        }
+             }
+        }  
 
         stage('Test') {
             steps {
