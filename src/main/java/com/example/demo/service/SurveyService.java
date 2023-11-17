@@ -30,12 +30,10 @@ public class SurveyService {
     }
 
     public Survey createSurvey(Survey survey) {
-        // Add validation or additional logic if needed
         return surveyRepository.save(survey);
     }
 
     public Survey updateSurvey(Long id, Survey updatedSurvey) {
-        // Add validation or additional logic if needed
     	updatedSurvey.setId(id);
         return surveyRepository.save(updatedSurvey);
     }

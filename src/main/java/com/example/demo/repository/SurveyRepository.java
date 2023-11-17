@@ -7,5 +7,4 @@ import com.example.demo.entity.Survey;
 
 @Repository
 public interface SurveyRepository extends JpaRepository<Survey, Long> {
-    // Add custom query methods if needed
 }
