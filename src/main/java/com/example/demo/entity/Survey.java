@@ -1,3 +1,11 @@
+/*Group Members: 
+Mrunmayee Bhagwat
+Yash Jobalia
+Tirth Shah
+
+Entity class
+Private member variables, Public getters and setters
+*/
 package com.example.demo.entity;
 
 
@@ -151,19 +159,14 @@ public class Survey {
 	    @Temporal(TemporalType.DATE)
 	    private Date surveyDate;
 
-	    // Liked most about the campus (students, location, campus, atmosphere, dorm rooms, sports)
-	    
 	    private String likedMost;
 
-	    // How they became interested in the university (friends, television, Internet, other)
 	   
 	    private String interestedInUniversity;
 
-	    // Likelihood of recommending the school (Very Likely, Likely, Unlikely)
 	   
 	    private String likelihoodToRecommend;
 
-	    // Getters and Setters
 	
 
 	

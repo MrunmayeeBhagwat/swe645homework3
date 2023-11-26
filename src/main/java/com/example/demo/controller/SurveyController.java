@@ -1,3 +1,12 @@
+/*Group Members: 
+Mrunmayee Bhagwat
+Yash Jobalia
+Tirth Shah
+
+Controller class
+All CRUD operations are performed as part of this class. We use methods from JPA repository to manipulate the database using annotations like @RequestMapping("/surveys"), 
+@GetMapping, @PostMapping, @PutMapping("/{id}"),@DeleteMapping("/{id}") */
+
 package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
